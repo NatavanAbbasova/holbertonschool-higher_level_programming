@@ -26,3 +26,11 @@
 >>> print(my_list2)
 [10, -3, 4]
 
+# ---- REQUIRED TEST: empty list ----
+>>> my_list3 = MyList()
+>>> print(my_list3)
+[]
+>>> my_list3.print_sorted()
+[]
+>>> print(my_list3)
+[]
