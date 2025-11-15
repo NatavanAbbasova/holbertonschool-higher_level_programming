@@ -53,4 +53,4 @@ class Rectangle:
         if self.width == 0 or self.height == 0:
             return ""
         lines = ["#" * self.width for _ in range(self.height)]
-        return "\n".join(lines)  
+        return "\n".join(lines)
