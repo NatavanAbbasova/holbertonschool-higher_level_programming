@@ -6,21 +6,21 @@ import math
 
 
 class Shape(ABC):
-    """Abstract base class representing a Shape"""
+    """Abstract base class for shapes"""
 
     @abstractmethod
     def area(self):
-        """Calculate area of the shape"""
+        """Compute the area of the shape"""
         pass
 
     @abstractmethod
     def perimeter(self):
-        """Calculate perimeter of the shape"""
+        """Compute the perimeter of the shape"""
         pass
 
 
 class Circle(Shape):
-    """Circle class inheriting from Shape"""
+    """Concrete class representing a circle"""
 
     def __init__(self, radius):
         self.radius = radius
@@ -33,7 +33,7 @@ class Circle(Shape):
 
 
 class Rectangle(Shape):
-    """Rectangle class inheriting from Shape"""
+    """Concrete class representing a rectangle"""
 
     def __init__(self, width, height):
         self.width = width
@@ -47,6 +47,6 @@ class Rectangle(Shape):
 
 
 def shape_info(shape):
-    """Prints area and perimeter of a shape using duck typing"""
+    """Prints the area and perimeter of any shape (duck typing)"""
     print(f"Area: {shape.area()}")
     print(f"Perimeter: {shape.perimeter()}")
